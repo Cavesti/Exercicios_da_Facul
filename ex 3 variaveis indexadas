@@ -1,8 +1,10 @@
+// Todo o código e feito em C.
+// Feito para guardar o aprendizado
 // Objetivo: Digitar valores do conjunto A, se eles forem pares, o elemento sera multiplicado por 5 e armazenado em B. Já se o elemento digitador for ímpar, ele sera armazenado em B somado a 5.
 
 
 
-
+mferrasa@uepg.br
 
 #include <stdio.h>
 #define tam 5
