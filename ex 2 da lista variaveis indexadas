@@ -1,0 +1,34 @@
+// Todo o código e feito em C.
+// Feito para guardar o aprendizado
+
+#include <stdio.h>
+#define tam 5
+
+int main()
+{
+    int i;
+    int A[5]= {0,0,0,0,0};
+    int B[5]= {0,0,0,0,0};
+    int C[5]= {0,0,0,0,0};
+    for(i=0; i<tam; i++)
+    {
+        printf("Informe o valor de A[%d]: ",i);
+        scanf("%d",&A[i]);
+    }
+    i=0;
+    for(i=0; i<tam; i++)
+    {
+        printf("O valor de A[%d] e: %d\n",i,A[i]);
+    }
+    i=0;
+    for(i=0; i<tam; i++)
+    {
+        B[i]=A[i]*3 ;
+    }
+    i=0;
+    for(i=0; i<tam; i++)
+    {
+        printf("O elemento B[%d] e : %d\n",i,B[i]);
+    }
+    return 0;
+}
