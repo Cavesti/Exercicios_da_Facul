@@ -1,5 +1,6 @@
 // Todo o código e feito em C.
 // Feito para guardar o aprendizado
+// Objetivo: Fazer um conjunto B em que contenha os respectivos elementos de A multiplicados por 3. 
 
 #include <stdio.h>
 #define tam 5
@@ -9,7 +10,6 @@ int main()
     int i;
     int A[5]= {0,0,0,0,0};
     int B[5]= {0,0,0,0,0};
-    int C[5]= {0,0,0,0,0};
     for(i=0; i<tam; i++)
     {
         printf("Informe o valor de A[%d]: ",i);
