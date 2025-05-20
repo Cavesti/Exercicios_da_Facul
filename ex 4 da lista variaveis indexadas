@@ -1,5 +1,6 @@
-
-
+// Todo o código e feito em C.
+// Feito para guardar o aprendizado
+// Objetivo: Digitar valores para o vetor A, e valores para o vetor B, e fazer a troca dos valores entre eles.
 
 #include <stdio.h>
 
