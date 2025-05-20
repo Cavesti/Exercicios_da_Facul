@@ -1,0 +1,41 @@
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int A[5]= {0,0,0,0,0};
+    int B[5]= {0,0,0,0,0};
+    int AUX[5]= {0,0,0,0,0};
+    int i;
+    for(i=0; i<5; i++)
+    {
+        printf("Insira o valor e A[%d]: \n",i);
+        scanf("%d",&A[i]);
+    }
+    i=0;
+    for(i=0; i<5; i++)
+    {
+        printf("O valor e A[%d] e: %d \n",i,A[i]);
+    }
+    i=0;
+    for(i=0; i<5; i++)
+    {
+        printf("Insira o valor de B[%d]: \n",i);
+        scanf("%d",&B[i]);
+    }
+    i=0;
+    for(i=0; i<5; i++)
+    {
+        printf("O valor e B[%d] e: %d \n",i,B[i]);
+    }
+    i=0;
+    for(i=0; i<5; i++)
+    {
+        AUX[i]=A[i];
+        A[i]=B[i];
+        B[i]=AUX[i];
+        printf("O valor de A[%d] e B[%d] trocados e: A[%d]= %d e B[%d] = %d \n",i,i,i,A[i],i,B[i]);
+    }
+}
