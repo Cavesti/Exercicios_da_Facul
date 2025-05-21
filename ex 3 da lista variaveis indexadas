@@ -2,10 +2,6 @@
 // Feito para guardar o aprendizado
 // Objetivo: Digitar valores do conjunto A, se eles forem pares, o elemento sera multiplicado por 5 e armazenado em B. Já se o elemento digitador for ímpar, ele sera armazenado em B somado a 5.
 
-
-
-mferrasa@uepg.br
-
 #include <stdio.h>
 #define tam 5
 
@@ -16,7 +12,7 @@ int main()
     int B[5]= {0,0,0,0,0};
     for(i=0; i<tam; i++)
     {
-        printf("Informe um valor para A[%d]: \n",i);
+        printf("Informe um valor para A[%d]: \n",i+1);
         scanf("%d",&A[i]);
     }
     i=0;
@@ -34,7 +30,7 @@ int main()
     i=0;
     for(i=0; i<tam; i++)
     {
-        printf("O elemento B[%d] e: %d \n",i,B[i]);
+        printf("O elemento B[%d] e: %d \n",i+1,B[i]);
     }
 }
 
