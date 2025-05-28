@@ -1,9 +1,6 @@
-
-
-
-
-
-
+// Todo o código e feito em C.
+// Feito para guardar o aprendizado
+// Objetivo: Ler um conjunto A de 5 elementos e um conjunto B com a mesma quantidade de elementos e gerar um conjunto C em que os 5 primeiros elementos dele sejam os elementos de A e os 5 últimos elementos de C sejam os elementos de B.
 
 #include <stdio.h>
 
@@ -14,8 +11,7 @@ main()
     int B[5];
     int C[10];
     int i;
-    int i2;
-    int i3;
+
     for(i=0; i<5; i++)
     {
         printf("Digite um valor para o termo A[%d]: \n",i+1);
