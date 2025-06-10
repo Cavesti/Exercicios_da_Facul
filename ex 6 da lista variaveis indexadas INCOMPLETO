@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+
+    char A[5][50];
+    int i;
+    char mer[5][50];
+    int quantidade[5];
+    float preco[5];
+
+    for(i=0; i<5; i++)
+    {
+        printf("Qual e a %d mercadoria selecionada?: \n ",i+1);
+        gets(A[i]);
+
+        // SEMPRE QUE FOR LER UMA VARIAVEL STRING, USAR O GETS PRA ELE VER TUDO, POIS SE TIVER ESCAÇO O SCANF SO LE A PRIMEIRA PALAVRA
+
+        printf("Informe a quantidade da %d mercadoria que selecionada que foi vendida:\n",i+1);
+        scanf (" %d",&quantidade[i]);
+        fflush(stdin);
+        // TINHA PROBLEMA NO BUFFER, SEM LIMPAR O BUFFER ELE ATROPELA A LEITURA DA STRING
+
+        printf("Qual e o valor da %d mercadoria?: \n ",i+1);
+        scanf("%.2f", &preco);
+        fflush(stdin);
+
+    }
+
+    for(i=0; i<5; i++)
+    {
+
+        printf("A %d mercadoria escolhida e: %s e sua quantidade e: %d  e seu preco e %.2f\n",i+1,A[i],quantidade[i],preco[i]);
+
+    }
+
+
+
+}
