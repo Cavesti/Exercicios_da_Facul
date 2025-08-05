@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int powah(x,n);
+
+int main()
+{
+    int i,a,b;
+
+    printf("Informe o Valor de X:");
+    scanf("%d",&a);
+    printf("Informe o Valor de N:");
+    scanf("%d",&b);
+    powah(a,b);
+    printf("O valor de X elevado a N e: %d",powah(a,b));
+
+
+}
+int powah(x,n)
+{
+    int z=0,i;
+    z=x;
+    for(i=0; i<n-1; i++)
+    {
+        z=z*x;
+    }
+
+    return z;
+}
