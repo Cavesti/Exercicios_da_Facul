@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int menor_vet(int x[]);
+
+int main()
+{
+
+    int vet[5];
+    int i;
+
+    for(i=0; i<5; i++)
+    {
+        printf("Insira o %d valor: ",i+1);
+        scanf("%d",&vet[i]);
+    }
+    for(i=0; i<5; i++)
+    {
+        printf("O %d valor e: %d \n",i+1,vet[i]);
+    }
+    menor_vet(vet);
+    printf("O menor elemento elemente e %d",menor_vet(vet));
+}
+
+
+int menor_vet(int x[])
+{
+    int j,menor;
+    x[0]=menor;
+
+
+    for(j=0; j<5; j++)
+    {
+        if(menor>x[j])
+        {
+
+            menor=x[j];
+        }
+    }
+    return menor;
+
+}
