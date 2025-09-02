@@ -1,0 +1,26 @@
+#include <stdio.h>
+    int main(){
+
+    struct pessoa
+    {
+        char nome[50];
+        int idade;
+        char cidade[20]
+    };
+    struct nascimento{
+    int dia;
+    char mes[15];
+    int ano;
+
+    };
+
+
+
+    struct pessoa joao={"Joao vitor",40,"Ponta Grossa"};
+    struct pessoa pedro={"pedro kruger",18,"Ponta Grossa"};
+
+        printf("%s \n %d \n %s ", pedro.nome,pedro.idade,pedro.cidade);
+
+
+
+    }
