@@ -26,3 +26,34 @@ int powah(x,n)
 
     return z;
 }
+
+
+
+
+
+
+/////// versao 2 
+
+
+
+#include <stdio.h>
+
+void potencia(int base, int elevado)
+{
+    int resultado=1,i;
+    for (i=0; i<elevado; i++)
+    {
+        resultado=resultado*base;
+    }
+    printf("O resultado e %d",resultado);
+}
+int main()
+{
+    int x,n;
+    printf("Insira o valor da base: ");
+    scanf("%d",&x);
+    printf("Insira o valor do expoente: ");
+    scanf("%d",&n);
+    potencia(x,n);
+}
+
